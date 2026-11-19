@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The World Today — Wednesday, 18 November 2026</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1024px; height: 1024px; overflow: hidden; }
+  body {
+    font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+    background: #f7f2e7; color: #141414;
+    padding: 0 26px;
+  }
+  /* ---------- top bar ---------- */
+  .topbar {
+    height: 24px; display: flex; justify-content: space-between; align-items: center;
+    border-bottom: 2px solid #141414;
+    font-size: 10px; letter-spacing: 2px; font-weight: 700; text-transform: uppercase;
+  }
+  .topbar .red { color: #b3202c; }
+  /* ---------- masthead ---------- */
+  .masthead { text-align: center; padding: 6px 0 4px; border-bottom: 4px double #141414; }
+  .masthead h1 {
+    font-family: "Noto Serif", Georgia, "Times New Roman", serif;
+    font-size: 58px; line-height: 0.95; letter-spacing: 1px; font-weight: 900;
+  }
+  .masthead .dateline {
+    margin-top: 5px; font-size: 16px; font-weight: 800; letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+  .masthead .dateline span { color: #b3202c; }
+  .standfirst {
+    text-align: center; font-family: "Noto Serif", Georgia, serif; font-style: italic;
+    font-size: 13px; color: #333; padding: 4px 40px 5px;
+    border-bottom: 1px solid #141414;
+  }
+  /* ---------- hero ---------- */
+  .hero { display: flex; gap: 18px; padding: 8px 0 7px; border-bottom: 2px solid #141414; }
+  .hero-text { width: 600px; }
+  .kicker {
+    display: inline-block; background: #b3202c; color: #fff; font-size: 10.5px;
+    font-weight: 800; letter-spacing: 2px; padding: 3px 8px; text-transform: uppercase;
+  }
+  .hero-text h2 {
+    font-family: "Noto Serif", Georgia, serif; font-size: 38px; line-height: 1.02;
+    font-weight: 900; margin: 7px 0 5px;
+  }
+  .hero-text .sub {
+    font-family: "Noto Serif", Georgia, serif; font-size: 14.5px; line-height: 1.3;
+    font-weight: 700; color: #222;
+  }
+  .hero-text .body { font-size: 11.5px; line-height: 1.4; margin-top: 5px; color: #333; }
+  .hero-art { width: 330px; flex-shrink: 0; }
+  .hero-art figcaption { font-size: 9.5px; color: #555; text-align: center; margin-top: 2px; letter-spacing: 0.5px; }
+  /* ---------- count bar ---------- */
+  .countbar {
+    display: flex; justify-content: space-between; align-items: center;
+    background: #141414; color: #f7f2e7; padding: 4px 12px;
+    font-size: 12px; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase;
+  }
+  .countbar .gold { color: #e8c15a; }
+  /* ---------- story grid ---------- */
+  .grid { column-count: 3; column-gap: 16px; padding: 8px 0 2px; }
+  .section { break-inside: avoid; margin-bottom: 6px; }
+  .section h3 {
+    font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase;
+    border-bottom: 2px solid; padding-bottom: 3px; margin-bottom: 6px;
+  }
+  .s-apac h3 { color: #0e6b6b; border-color: #0e6b6b; }
+  .s-mideast h3 { color: #8c1d1d; border-color: #8c1d1d; }
+  .s-ukr h3 { color: #7a5b00; border-color: #7a5b00; }
+  .s-usa h3 { color: #1d3f8c; border-color: #1d3f8c; }
+  .s-tech h3 { color: #5b2d8e; border-color: #5b2d8e; }
+  .s-world h3 { color: #2d6b2d; border-color: #2d6b2d; }
+  .card { display: flex; gap: 8px; margin-bottom: 5px; }
+  .card .ic { width: 22px; height: 22px; flex-shrink: 0; margin-top: 1px; }
+  .card h4 {
+    font-family: "Noto Serif", Georgia, serif; font-size: 12.4px; line-height: 1.16;
+    font-weight: 800;
+  }
+  .card p { font-size: 10.4px; line-height: 1.26; color: #333; margin-top: 2px; }
+  /* ---------- timeline ---------- */
+  .timeline { border-top: 2px solid #141414; padding: 5px 0 3px; }
+  .timeline h3 {
+    font-size: 11px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 4px;
+  }
+  .timeline h3 span { color: #b3202c; }
+  .tl { display: flex; gap: 0; }
+  .tl .step { flex: 1; padding: 0 10px; border-left: 2px solid #b3202c; }
+  .tl .step:first-child { border-left: none; padding-left: 0; }
+  .tl .t { font-size: 11px; font-weight: 800; color: #b3202c; }
+  .tl .d { font-size: 10.2px; line-height: 1.28; color: #333; margin-top: 1px; }
+  /* ---------- footer ---------- */
+  .footer {
+    border-top: 2px solid #141414; margin-top: 3px; padding-top: 4px;
+    font-size: 10px; line-height: 1.4; color: #444; text-align: center;
+  }
+  .footer b { color: #141414; }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <span>Make.fun &middot; World Edition</span>
+  <span class="red">One day &middot; One page</span>
+  <span>No. 20261118</span>
+</div>
+
+<div class="masthead">
+  <h1>THE WORLD TODAY</h1>
+  <div class="dateline">Wednesday, <span>18 November 2026</span></div>
+</div>
+
+<div class="standfirst">One day, one page: the stories that moved the world &mdash; from Shenzhen to Gaza, Kyiv to the Bay of Bengal.</div>
+
+<div class="hero">
+  <div class="hero-text">
+    <span class="kicker">Asia-Pacific &middot; Diplomacy</span>
+    <h2>TRUMP LANDS IN SHENZHEN</h2>
+    <div class="sub">Xi Jinping greets him at the airport &mdash; the first-ever trilateral with Putin is set for Thursday at the APEC summit.</div>
+    <div class="body">Xi and Putin met in Shenzhen on Wednesday, a day before the three-way meeting, to talk trade, technology and the wars in Ukraine and the Middle East.</div>
+  </div>
+  <div class="hero-art">
+    <svg width="330" height="168" viewBox="0 0 330 168" xmlns="http://www.w3.org/2000/svg">
+      <rect x="0" y="0" width="330" height="168" fill="#dce8f0"/>
+      <circle cx="165" cy="86" r="62" fill="#7fb3d5" stroke="#141414" stroke-width="2"/>
+      <ellipse cx="165" cy="86" rx="62" ry="24" fill="none" stroke="#141414" stroke-width="1" opacity="0.5"/>
+      <ellipse cx="165" cy="86" rx="24" ry="62" fill="none" stroke="#141414" stroke-width="1" opacity="0.5"/>
+      <ellipse cx="165" cy="86" rx="46" ry="62" fill="none" stroke="#141414" stroke-width="1" opacity="0.35"/>
+      <path d="M118 66 Q138 52 158 62 Q150 78 132 82 Q120 78 118 66 Z" fill="#3d8b4f"/>
+      <path d="M180 60 Q205 50 222 64 Q214 80 196 80 Q182 76 180 60 Z" fill="#3d8b4f"/>
+      <path d="M140 100 Q165 92 190 102 Q180 122 160 122 Q144 116 140 100 Z" fill="#3d8b4f"/>
+      <path d="M205 108 Q222 104 228 114 Q218 126 206 120 Z" fill="#3d8b4f"/>
+      <g font-family="Arial" font-size="9" font-weight="bold" fill="#b3202c">
+        <circle cx="208" cy="56" r="4" fill="#b3202c"/><text x="216" y="48">SHENZHEN</text>
+        <circle cx="138" cy="52" r="4" fill="#b3202c"/><text x="92" y="36">KYIV</text>
+        <circle cx="176" cy="66" r="4" fill="#b3202c"/><text x="146" y="156">GAZA</text>
+        <circle cx="196" cy="76" r="4" fill="#b3202c"/><text x="204" y="100">HORMUZ</text>
+        <circle cx="112" cy="88" r="4" fill="#b3202c"/><text x="48" y="112">ALASKA</text>
+        <circle cx="206" cy="92" r="4" fill="#b3202c"/><text x="214" y="132">BAY OF BENGAL</text>
+      </g>
+    </svg>
+    <figcaption>THE DAY&rsquo;S FLASHPOINTS, MARKED ON THE GLOBE</figcaption>
+  </div>
+</div>
+
+<div class="countbar">
+  <span>23 stories &middot; 6 regions</span>
+  <span class="gold">&#10003; Date-checked</span>
+  <span>All times UTC</span>
+</div>
+
+<div class="grid">
+
+  <div class="section s-apac">
+    <h3>Asia-Pacific</h3>
+    <div class="card">
+      <svg class="ic" viewBox="0 0 24 24"><g stroke="#0e6b6b" stroke-width="1.8" fill="none"><rect x="3" y="4" width="6" height="9" fill="#0e6b6b" stroke="none"/><rect x="10" y="4" width="6" height="9" fill="#7fb3d5" stroke="none"/><rect x="17" y="4" width="4" height="9" fill="#b3202c" stroke="none"/><line x1="4" y1="13" x2="4" y2="20"/><line x1="13" y1="13" x2="13" y2="20"/><line x1="19" y1="13" x2="19" y2="20"/></g></svg>
+      <div><h4>ASEAN SUMMIT CLOSES</h4><p>49th summit ends with 150+ documents, four declarations; chair passes to Singapore&rsquo;s Lawrence Wong.</p></div>
+    </div>
+    <div class="card">
+      <svg class="ic" viewBox="0 0 24 24"><g stroke="#0e6b6b" stroke-width="1.8" fill="none"><path d="M3 8 H13 M13 8 l-3 -3 M13 8 l-3 3"/><path d="M21 16 H11 M11 16 l3 -3 M11 16 l3 3"/></g></svg>
+      <div><h4>INDIA&ndash;US DEAL NEARLY DONE</h4><p>Trade talks are nearly complete; signing waits on a new US tariff framework.</p></div>
+    </div>
+    <div class="card">
+      <svg class="ic" viewBox="0 0 24 24"><g stroke="#0e6b6b" stroke-width="1.8" fill="none"><rect x="4" y="7" width="16" height="10" fill="#dce8f0"/><line x1="4" y1="12" x2="20" y2="12"/><circle cx="12" cy="12" r="2.4" fill="#0e6b6b" stroke="none"/></g></svg>
+      <div><h4>INDIA SIGNS ₹1,976-CRORE ISRAEL DEAL</h4><p>New Delhi signs a ₹1,976-crore contract with Israel Aerospace Industries.</p></div>
+    </div>
+    <div class="card">
+      <svg class="ic" viewBox="0 0 24 24"><g stroke="#0e6b6b" stroke-width="1.8" fill="none"><path d="M4 18 L7 8 L10 14 L12 6 L14 14 L17 8 L20 18 Z"/></g></svg>
+      <div><h4>WILLIAM AND CATHERINE MEET MODI</h4><p>The Prince and Princess of Wales meet Prime Minister Narendra Modi in Delhi.</p></div>
+    </div>
+    <div class="card">
+      <svg class="ic" viewBox="0 0 24 24"><g stroke="#0e6b6b" stroke-width="1.8" fill="none"><circle cx="8" cy="8" r="4"/><circle cx="16" cy="16" r="4"/><path d="M11 11 L13 13"/></g></svg>
+      <div><h4>INDIA AND JAPAN HOLD 2+2 TALKS</h4><p>Defence and foreign ministers meet in Tokyo for the fourth 2+2 dialogue.</p></div>
+    </div>
+    <div class="card">
+      <svg class="ic" viewBox="0 0 24 24"><g stroke="#0e6b6b" stroke-width="1.8" fill="none"><path d="M6 14 a4 4 0 1 1 1 -7 a5 5 0 0 1 9 1 a3.5 3.5 0 0 1 0 6 Z" fill="#dce8f0"/><path d="M8 18 l-1 3 M12 18 l-1 3 M16 18 l-1 3"/></g></svg>
+      <div><h4>CYCLONE AKVAN STRENGTHENS</h4><p>Severe cyclone in the Bay of Bengal; landfall on the Andhra coast expected around 20 Nov; Odisha evacuates.</p></div>
+    </div>
+  </div>
+
+  <div class="section s-mideast">
+    <h3>Middle East</h3>
+    <div class="card">
+      <svg class="ic" viewBox="0 0 24 24"><g stroke="#8c1d1d" stroke-width="1.8" fill="none"><path d="M12 3 L16 12 L12 21 L8 12 Z" fill="#e8c15a"/><path d="M8 12 H16"/></g></svg>
+      <div><h4>US JETS HIT IRANIAN MISSILE SITE</h4><p>US fighter jets strike a Revolutionary Guards missile site on Qeshm Island; first reported on Wednesday.</p></div>
+    </div>
+    <div class="card">
+      <svg class="ic" viewBox="0 0 24 24"><g stroke="#8c1d1d" stroke-width="1.8" fill="none"><path d="M3 14 L9 6 L15 12 L21 8"/><path d="M3 18 H21" stroke-dasharray="2 2"/></g></svg>
+      <div><h4>IRANIAN DRONES HIT US BASES</h4><p>Iran says drones struck US platforms at Ali Al Salem base in Kuwait and a US radar site in Bahrain.</p></div>
+    </div>
+    <div class="card">
+      <svg class="ic" viewBox="0 0 24 24"><g stroke="#8c1d1d" stroke-width="1.8" fill="none"><path d="M3 14 L5 18 H19 L21 14 Z" fill="#dce8f0"/><path d="M12 14 V7 M12 7 L9 10 M12 7 L15 10"/><path d="M3 20 q3 -2 6 0 q3 2 6 0 q3 -2 6 0"/></g></svg>
+      <div><h4>TANKER AND ADNOC SHIP HIT</h4><p>ADNOC ship struck in the Strait of Hormuz, one crew missing; a crude tanker hit nearby, Indian crew safe.</p></div>
+    </div>
+    <div class="card">
+      <svg class="ic" viewBox="0 0 24 24"><g stroke="#8c1d1d" stroke-width="1.8" fill="none"><path d="M12 3 v18 M5 8 h14 M7 8 v10 M17 8 v10"/></g></svg>
+      <div><h4>ISRAEL OPENS GAZA OPERATION</h4><p>Israel begins a &ldquo;concentrated operation&rdquo; in three areas of central Gaza; Board of Peace faults both sides over the ceasefire.</p></div>
+    </div>
+    <div class="card">
+      <svg class="ic" viewBox="0 0 24 24"><g stroke="#8c1d1d" stroke-width="1.8" fill="none"><rect x="5" y="10" width="14" height="9" fill="#dce8f0"/><path d="M5 10 L12 4 L19 10"/></g></svg>
+      <div><h4>KAHANA ELECTED SPEAKER</h4><p>Israel&rsquo;s parliament elects Matan Kahana as speaker.</p></div>
+    </div>
+  </div>
+
+  <div class="section s-ukr">
+    <h3>Ukraine</h3>
+    <div class="card">
+      <svg class="ic" viewBox="0 0 24 24"><g stroke="#7a5b00" stroke-width="1.8" fill="none"><path d="M3 16 Q12 6 21 16"/><path d="M6 16 V20 M12 12.5 V20 M18 16 V20"/></g></svg>
+      <div><h4>KERCH BRIDGE HIT AGAIN</h4><p>Ukraine strikes the Crimean Bridge for a second day; part of the road span collapses. Zelensky calls it unprecedented.</p></div>
+    </div>
+  </div>
+
+  <div class="section s-usa">
+    <h3>Americas</h3>
+    <div class="card">
+      <svg class="ic" viewBox="0 0 24 24"><g stroke="#1d3f8c" stroke-width="1.8" fill="none"><rect x="4" y="9" width="16" height="11" fill="#dce8f0"/><path d="M4 9 L12 4 L20 9"/><path d="M9 20 v-5 h6 v5"/></g></svg>
+      <div><h4>PELTOLA FLIPS ALASKA</h4><p>Democrat Mary Peltola beats Republican Dan Sullivan; Democrats projected to a 56&ndash;44 Senate majority.</p></div>
+    </div>
+    <div class="card">
+      <svg class="ic" viewBox="0 0 24 24"><g stroke="#1d3f8c" stroke-width="1.8" fill="none"><path d="M12 4 l2 5 5 1 -4 4 1 6 -4 -3 -4 3 1 -6 -4 -4 5 -1 Z"/></g></svg>
+      <div><h4>JEFFRIES NOMINATED FOR SPEAKER</h4><p>Hakeem Jeffries is nominated to become the first African American Speaker of the US House.</p></div>
+    </div>
+    <div class="card">
+      <svg class="ic" viewBox="0 0 24 24"><g stroke="#1d3f8c" stroke-width="1.8" fill="none"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2.5" fill="#b3202c" stroke="none"/><path d="M12 4 v4 M12 16 v4 M4 12 h4 M16 12 h4"/></g></svg>
+      <div><h4>US LOSES MEASLES-FREE STATUS</h4><p>Measles is again spreading continuously in the US, ending 26 years of measles-free status.</p></div>
+    </div>
+  </div>
+
+  <div class="section s-tech">
+    <h3>Tech &amp; Markets</h3>
+    <div class="card">
+      <svg class="ic" viewBox="0 0 24 24"><g stroke="#5b2d8e" stroke-width="1.8" fill="none"><rect x="7" y="7" width="10" height="10" fill="#e8c15a"/><path d="M10 7 V4 M14 7 V4 M10 20 V17 M14 20 V17 M7 10 H4 M7 14 H4 M20 10 H17 M20 14 H17"/></g></svg>
+      <div><h4>NVIDIA POSTS RECORD QUARTER</h4><p>Revenue $115.8 billion (+103%); data-centre $107.6 billion; profit $65.3 billion. Board rejects Huang&rsquo;s return as CEO.</p></div>
+    </div>
+    <div class="card">
+      <svg class="ic" viewBox="0 0 24 24"><g stroke="#5b2d8e" stroke-width="1.8" fill="none"><rect x="6" y="6" width="12" height="12" fill="#dce8f0"/><path d="M6 12 H18 M12 6 V18" stroke-dasharray="2 2"/></g></svg>
+      <div><h4>CHINA LIMITS H200 CHIPS</h4><p>China restricts imports of Nvidia&rsquo;s H200 AI chips despite US approval for sales to major Chinese tech firms.</p></div>
+    </div>
+    <div class="card">
+      <svg class="ic" viewBox="0 0 24 24"><g stroke="#5b2d8e" stroke-width="1.8" fill="none"><path d="M4 6 L20 6 M4 12 L20 12 M4 18 L12 18"/><circle cx="17" cy="18" r="2.5" fill="#b3202c" stroke="none"/></g></svg>
+      <div><h4>NVIDIA HALTS CHIP SHIPMENTS</h4><p>Nvidia stops shipping US-approved AI chips to China after selling $2.4 billion worth.</p></div>
+    </div>
+  </div>
+
+  <div class="section s-world">
+    <h3>World</h3>
+    <div class="card">
+      <svg class="ic" viewBox="0 0 24 24"><g stroke="#2d6b2d" stroke-width="1.8" fill="none"><circle cx="12" cy="12" r="5"/><path d="M12 4 v3 M12 17 v3 M4 12 h3 M17 12 h3 M7 7 l2 2 M17 7 l-2 2 M7 17 l2 -2 M17 17 l-2 -2"/></g></svg>
+      <div><h4>EBOLA PASSES 11,000 CASES</h4><p>The DR Congo Ebola outbreak passes 11,000 cases.</p></div>
+    </div>
+    <div class="card">
+      <svg class="ic" viewBox="0 0 24 24"><g stroke="#2d6b2d" stroke-width="1.8" fill="none"><path d="M3 14 L7 8 L10 13 L13 6 L16 12 L18 9 L21 14"/></g></svg>
+      <div><h4>MAGNITUDE 6 QUAKE IN PNG</h4><p>A magnitude 6 earthquake strikes Papua New Guinea; a magnitude 4.1 quake hits Chamoli, Uttarakhand.</p></div>
+    </div>
+    <div class="card">
+      <svg class="ic" viewBox="0 0 24 24"><g stroke="#2d6b2d" stroke-width="1.8" fill="none"><ellipse cx="12" cy="13" rx="8" ry="3.5" fill="#dce8f0"/><path d="M12 10 V4 M5 4 H19"/></g></svg>
+      <div><h4>BLACK HAWK CRASHES IN JORDAN</h4><p>A Black Hawk helicopter crashes during a training exercise in Jordan.</p></div>
+    </div>
+    <div class="card">
+      <svg class="ic" viewBox="0 0 24 24"><g stroke="#2d6b2d" stroke-width="1.8" fill="none"><path d="M4 18 L9 10 L13 14 L20 5"/><path d="M17 5 h3 v3"/></g></svg>
+      <div><h4>INDIA&rsquo;S WHOLESALE PRICES SOAR</h4><p>Wholesale inflation rises to 12.29%, the highest in four years.</p></div>
+    </div>
+  </div>
+
+</div>
+
+<div class="timeline">
+  <h3>The day in UTC <span>&mdash; as reported</span></h3>
+  <div class="tl">
+    <div class="step"><div class="t">06:04</div><div class="d">Iran says drones struck US platforms at Kuwait air base</div></div>
+    <div class="step"><div class="t">06:26</div><div class="d">Trump heads to China for the first-ever trilateral with Xi and Putin</div></div>
+    <div class="step"><div class="t">12:24</div><div class="d">India signs ₹1,976-crore deal with Israel Aerospace Industries</div></div>
+    <div class="step"><div class="t">12:29</div><div class="d">Israel begins a concentrated operation in central Gaza</div></div>
+  </div>
+</div>
+
+<div class="footer">
+  <b>Date-checked: all stories from Wednesday 18 November 2026.</b> Events shown happened, or were first reported, on that day in some time zone.<br>
+  The World Today &middot; make.fun news-image-20261118 &middot; One day, one page &middot; 23 stories from 6 regions
+</div>
+
+</body>
+</html>
